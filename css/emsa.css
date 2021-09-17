@@ -14,6 +14,10 @@ body {
   position:relative;
 }
 
+#topbar i {
+  opacity: 0.6;
+}
+
 #sitenav {
   font-weight: 400 !important;
   font-family: "Ubuntu" !important;
@@ -25,11 +29,16 @@ body {
   color: #1f83c2!important;
 }
 
-#sitenav .nav-item.active,
 #sitenav .nav-item:hover {
   background-color: #e6e6e6!important;
 }
 
 #sitenav .active .nav-link {
   color: #ef6c00!important;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Oxygen";
+  text-rendering:optimizeLegibility;
+  font-weight: 400;
 }
