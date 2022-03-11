@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/altius.css">
 </head>
 
-<body>
+<body class="b-altius">
 
   <!-- INCLUDED HEADER -->
 
@@ -92,34 +92,32 @@
 
 
   <!--Module Content -->
-  <main id="main" class="full-height">
+  <main id="main">
+    <div class="container-fluid">
+      <div class="row">
 
-    <div class="container-fluid full-height">
-      <div class="row full-height">
-
-        <div class="sidebar col-fixed">
-          <div class="card full-height">
-            <div class="card-header card-header-area">
+        <div class="col-fixed">
+          <div class="card card-noborder">
+            <div class="card-header view-header">
               <i class="fa fa-database fa-lg" aria-hidden="true"></i>
               <span class="ms-3">Data Store</span>
-
             </div>
-           
+
             <!-- Links to module sub pages -->
             <ul class="list-group list-group-flush list-group-noborder">
               <button type="button" class="list-group-item list-group-item-action  py-3">
                 <span class="me-3"><i class="fa fa-object-group  fa-fw"></i></span>
-               Groups
+                Groups
               </button>
 
               <button type="button" class="list-group-item list-group-item-action py-3">
                 <span class="me-3"><i class="fa fa-globe fa-fw"></i></span>
-               Products
+                Products
               </button>
 
               <button type="button" class="list-group-item list-group-item-action py-3">
                 <span class="me-3"><i class="fa fa-arrow-left fa-fw"></i></span>
-               Generic Datasets
+                Generic Datasets
               </button>
 
               <button type="button" class="list-group-item list-group-item-action py-3">
@@ -132,30 +130,25 @@
           </div>
         </div>
 
-        <div class="main-content col-fluid full-height">
-          <div class="card full-height" style="border-left: none; border-right: none;">
-            <div class="card-header card-header-area">
 
-              <span>Generic Datasets</span>
+        <div id="altius-view" class="col-fluid">
 
+          <div class="card  card-noborder min-vh-100">
+            <div class="card-header view-header card-header-buttons ">
+              <div class="row mx-0">
+                <div class="col-9">
+                  <span class="me-5"> My Title </span>
+
+                </div>
+                <div class="col-3"> </div>
+              </div>
             </div>
-            <div class="ps-3 py-4 full-height">
-              <h5 class="fw-bold">Data Store Generic Datasets</h5>
-              A role is a group of permissions that you can assign to principals
-            </div>
-          </div>
-
-
-        </div>
-
-
-
-      </div><!-- /.row -->
-    </div><!-- /.container -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
 
 
   </main>
-  
+
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

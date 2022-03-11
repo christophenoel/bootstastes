@@ -1,18 +1,9 @@
 /*-- Body Reset --*/
 
-html,
-body,
-main {
-  height: 100%;
-}
 
-.full-height {
-  height: 100%;
-}
-
-body {
-  background-color: #fafafa;
-  color: rgba(0, 0, 0, 0.987);
+body.b-altius {
+  background-color: white;
+  color: black;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -21,39 +12,47 @@ body {
   overflow-x: hidden;
 }
 
-/*============= NAVIGATION =============*/
+body.b-altius .ui-widget {
+  font-size: 1em !important;
+}
 
-.navbar-brand img {
+
+/*============= TOP NAVIGATION =============*/
+
+body.b-altius  .navbar-brand img {
   height: 2rem;
 }
 
-#topbar {
+body.b-altius  #topbar {
   background: #1a73e8;
-  font-size: 1.2 rem;
+  font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   z-index: 1;
   height: 50px;
   overflow: hidden;
-  top: 0;
+  width: 100%;
+}
+
+/*============= OFFCANVAS PLATFORM NAVIGATION (mobile collapsible side bar) =============*/
+
+body.b-altius .offcanvas  .nav-item {
+  padding: 0.5rem;
+  font-size: 1.3em;
+}
+
+
+/*============= MODULE PART (MAIN) =============*/
+
+#main {
   position: fixed;
   width: 100%;
 }
 
-#main {
-  margin-top: 50px;
-    position: fixed;
-    width: 100%;
-}
+/** ---- Fixed left side module navigation bar ---- */
 
-.nav-item {
-  padding: 0.5rem;
-}
-
-/** Fixed left side navigation bar */
-
-.col-fixed {
+body.b-altius  .col-fixed {
   position: relative;
   /*border: 1px solid lightgrey;*/
   min-height: 1px;
@@ -61,70 +60,75 @@ body {
   padding-left: 0px;
   float: left;
   width: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
-  height: 100%;
+
 }
 
-.col-fixed i {
-  color: Gray;
+body.b-altius  .col-fixed i {
+  color: dimgray;
 }
 
-.col-fluid {
+/** ---- fluid right main area ---- */
+
+body.b-altius  .col-fluid {
   border: 1px solid lightgrey;
-  position: relative;
+  border-top-width: 0;
   min-height: 1px;
   padding: 0 0 0 0;
-
-  float: left;
-  width: 100%;
-  height: 100%;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .col-fixed {
-    width: 250px;
+@media (min-width: 768px)  {
+  body.b-altius  .col-fixed {
+      width: 250px;
   }
-  .col-fluid {
-    width: calc(100% - 250px);
+  body.b-altius  .col-fluid {
+      width: calc(100% - 250px);
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .col-fixed {
-    width: 250px;
-  }
-  .col-fluid {
-    width: calc(100% - 250px);
-  }
-}
+/*============= Cards Styling =============*/
 
-@media (min-width: 1200px) {
-  .col-fixed {
-    width: 250px;
-  }
-  .col-fluid {
-    width: calc(100% - 250px);
-  }
-}
 
-.card-header-area {
-  background-color: white;
-  padding-top: 0.9em;
-  padding-bottom: 0.9em;
-  font-size: 1.5em;
-}
-
-.list-group {
+/* List groups styling  */
+body.b-altius  .list-group {
   font-size: 1.2em;
+  border-top-width: 0px!important;
 }
 
-.card .list-group a {
-  padding-top: 10px;
+body.b-altius  .card .list-group a {
+  padding-top:10px;
   padding-bottom: 10px;
 }
 
-.list-group-noborder > .list-group-item {
-  border-width: 0 0 0px !important;
-  border-bottom-width: 0pximportant;
+body.b-altius .card .list-group-item {
+  color: #212529;
+  text-decoration: none;
 }
+
+/* card with no border */
+body.b-altius .card-noborder, body.b-altius .card-noborder .list-group-item {
+  border-left: none;
+  border-right: none;
+  border-top:none;
+  border-bottom: none
+}
+
+body.b-altius .list-group-noborder>.list-group-item {
+  border-width: 0 0 0px!important;
+  border-bottom-width: 0px!important;
+}
+
+
+/*============= VIEW HEADER  =============*/
+body.b-altius  .view-header {
+  background-color: white;
+  padding-top:0.9em;
+  padding-bottom:0.9em;
+  font-size: 1.5em;
+  height: 50px;
+}
+
+
+
+
+
+
